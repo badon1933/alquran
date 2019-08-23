@@ -1,9 +1,10 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid" style="background-image: url('../public/img/bg.jpg'); background-size: cover;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="text-center">
-                <h1 class="display-4">Fluid jumbotron</h1><br>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla laudantium quidem totam error</p>
+                <a href="https://www.freepik.com/free-photos-vectors/pattern" style="display: none">Pattern vector created by kjpargeter - www.freepik.com</a>
+                <img class="display-4" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Quran2.png" alt="calligraphy">
+                <p class="display-4 mt-4 mb-0" style="color:antiquewhite">THE HOLY QURAN</p><br>
             </div>
         </div>
     </div>
@@ -13,7 +14,7 @@
 
     <div class="row justify-content-center">
         <div class="col-10">
-            <h4>
+            <h5>
                 <span>Quick Links </span>
                 <span>
                     <a href="#">Surah Ar-Rahman</a>
@@ -24,26 +25,26 @@
                 <span>
                     <a href="#">Ayatul Kursi</a>
                 </span>
-            </h4>
+            </h5>
             <hr>
         </div>
     </div>
 
-    <div class="row justify-content-center mb-3">
+    <div class="row justify-content-center">
         <span>
             <h3>Surah List</h3>
         </span>
     </div>
 
-    <div class="row">
-         <div class="col-md-4">
-            <ul>
+    <div class="row my-3">
+        <div class="col-md-4">
+            <ul style="list-style-type:none;">
                 <?php for ($i = 0; $i < 38; $i++) : ?>
                 <li>
                     <a href="#" class="row">
                         <div class="col-2"><?= $i + 1; ?></div>
-                        <div class="col-7"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                        <div class="col-3"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                        <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
+                        <div class="col-4"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
                         <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
@@ -53,13 +54,13 @@
         </div>
 
         <div class="col-md-4">
-            <ul>
-                <?php for ($i = 37; $i < 76; $i++) : ?>
+            <ul style="list-style-type:none;">
+                <?php for ($i = 38; $i < 76; $i++) : ?>
                 <li>
-                    <a href="#" class="row">
+                    <a href=" #" class="row">
                         <div class="col-2"><?= $i + 1; ?></div>
-                        <div class="col-7"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                        <div class="col-3"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                        <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
+                        <div class="col-4"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
                         <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
@@ -69,13 +70,13 @@
         </div>
 
         <div class="col-md-4">
-            <ul>
-                <?php for ($i = 75; $i < 114; $i++) : ?>
+            <ul style="list-style-type:none;">
+                <?php for ($i = 76; $i < 114; $i++) : ?>
                 <li>
-                    <a href="#" class="row">
+                    <a href=" #" class="row">
                         <div class="col-2"><?= $i + 1; ?></div>
-                        <div class="col-7"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                        <div class="col-3"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                        <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
+                        <div class="col-4"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
                         <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
@@ -86,12 +87,4 @@
 
     </div>
 
-</div>
-
-<div class="jumbotron mb-0">
-    <div class="row justify-content-center">
-        <span>
-            <h4>This is Footer</h4>
-        </span>
-    </div>
 </div>
