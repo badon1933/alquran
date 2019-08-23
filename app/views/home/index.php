@@ -36,45 +36,51 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4">
+         <div class="col-md-4">
             <ul>
+                <?php for ($i = 0; $i < 38; $i++) : ?>
                 <li>
                     <a href="#" class="row">
-                        <div class="col-2">1</div>
-                        <div class="col-7">Surah Name</div>
-                        <div class="col-3">Arabic</div>
+                        <div class="col-2"><?= $i + 1; ?></div>
+                        <div class="col-7"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
+                        <div class="col-3"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
-                        <div class="col-10">Translation</div>
+                        <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
                 </li>
+                <?php endfor ?>
             </ul>
         </div>
 
         <div class="col-md-4">
             <ul>
+                <?php for ($i = 37; $i < 76; $i++) : ?>
                 <li>
                     <a href="#" class="row">
-                        <div class="col-2">1</div>
-                        <div class="col-7">Surah Name</div>
-                        <div class="col-3">Arabic</div>
+                        <div class="col-2"><?= $i + 1; ?></div>
+                        <div class="col-7"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
+                        <div class="col-3"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
-                        <div class="col-10">Translation</div>
+                        <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
                 </li>
+                <?php endfor ?>
             </ul>
         </div>
 
         <div class="col-md-4">
             <ul>
+                <?php for ($i = 75; $i < 114; $i++) : ?>
                 <li>
                     <a href="#" class="row">
-                        <div class="col-2">1</div>
-                        <div class="col-7">Surah Name</div>
-                        <div class="col-3">Arabic</div>
+                        <div class="col-2"><?= $i + 1; ?></div>
+                        <div class="col-7"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
+                        <div class="col-3"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
-                        <div class="col-10">Translation</div>
+                        <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
                 </li>
+                <?php endfor ?>
             </ul>
         </div>
 
