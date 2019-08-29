@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div class="container asd">
+<div class="container">
 
     <div class="row justify-content-center">
         <div class="col-10">
