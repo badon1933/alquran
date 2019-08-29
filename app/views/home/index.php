@@ -41,10 +41,10 @@
             <ul style="list-style-type:none;">
                 <?php for ($i = 0; $i < 38; $i++) : ?>
                 <li>
-                    <a href="#" class="row">
+                    <a href="http://localhost/wpu/phpmvc/public/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row">
                         <div class="col-2"><?= $i + 1; ?></div>
                         <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                        <div class="col-4"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                        <div class="col-4 word"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
                         <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
@@ -57,10 +57,10 @@
             <ul style="list-style-type:none;">
                 <?php for ($i = 38; $i < 76; $i++) : ?>
                 <li>
-                    <a href=" #" class="row">
+                    <a href="http://localhost/wpu/phpmvc/public/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row">
                         <div class="col-2"><?= $i + 1; ?></div>
                         <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                        <div class="col-4"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                        <div class="col-4 word"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
                         <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
@@ -73,10 +73,10 @@
             <ul style="list-style-type:none;">
                 <?php for ($i = 76; $i < 114; $i++) : ?>
                 <li>
-                    <a href=" #" class="row">
+                    <a href="http://localhost/wpu/phpmvc/public/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row">
                         <div class="col-2"><?= $i + 1; ?></div>
                         <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                        <div class="col-4"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                        <div class="col-4 word"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                         <div class="col-2"></div>
                         <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                     </a>
