@@ -1,3 +1,3 @@
 <?php
 
-define('BASEURL', 'http://localhost/wpu/phpmvc/public');
+define('BASEURL', 'http://localhost/alquran/public');
