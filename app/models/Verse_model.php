@@ -9,7 +9,7 @@ class Verse_model
     {
         $client = new Client();
 
-        $response = $client->request('GET', 'http://staging.quran.com:3000/api/v3/chapters/' . $chapter_id . '/verses?language=en&text_type=words');
+        $response = $client->request('GET', 'http://staging.quran.com:3000/api/v3/chapters/' . $chapter_id . '/verses?translations=33&language=id&text_type=words');
 
         $result = json_decode($response->getBody()->getContents(), true);
 
