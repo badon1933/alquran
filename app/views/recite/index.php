@@ -40,6 +40,7 @@
     <?php endforeach ?>
 
     <div class="row justify-content-center my-3">
+        <a href="<?= BASEURL; ?>/recite/page/<?= $data['verse']['verses'][0]['chapter_id']; ?>/" class="btn btn-outline-info">Next Page</a>
         <a href="<?= BASEURL; ?>" class="btn btn-outline-info">Back to Home</a>
     </div>
 </div>
