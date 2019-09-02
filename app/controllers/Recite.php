@@ -6,7 +6,6 @@ class Recite extends Controller
     {
         $data['judul'] = 'Recite';
         $data['verse'] = $this->model('Verse_model')->getVerse($chapter_id);
-        $data['page'] = 1;
 
         $this->view('templates/header', $data);
         $this->view('recite/index', $data);
