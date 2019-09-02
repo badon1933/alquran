@@ -27,7 +27,15 @@
             <div class="row">
                 <div class="col-12">
                     <div class="arabic my-2">
-                        <?= $row['text_madani']; ?>
+                        <?php if ($row['verse_number'] == 1 && $row['chapter_id'] > 1 && $row['chapter_id'] != 9) : ?>
+                            <?php $bismillah_split = explode('بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ', $row['text_madani']); ?>
+                            <div class="row justify-content-center arabic mb-3">
+                                ﷽
+                            </div>
+                            <?= $bismillah_split[1]; ?>
+                        <?php else : ?>
+                            <?= $row['text_madani']; ?>
+                        <?php endif; ?>
                     </div>
                     <div class="row my-2">
                         Translation
