@@ -13,16 +13,16 @@
 <div class="container">
 
     <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col">
             <h5>
-                <span>Quick Links </span>
-                <span>
+                <span class="mr-1 quick-link">Quick Links </span>
+                <span class="mx-1 quick-link">
                     <a href="#">Surah Ar-Rahman</a>
                 </span>
-                <span>
+                <span class="mx-1 quick-link">
                     <a href="#">Surah Al-Mulk</a>
                 </span>
-                <span>
+                <span class="mx-1 quick-link">
                     <a href="#">Ayatul Kursi</a>
                 </span>
             </h5>
@@ -38,15 +38,15 @@
 
     <div class="row my-3">
         <div class="col-md-4">
-            <ul style="list-style-type:none;">
+            <ul>
                 <?php for ($i = 0; $i < 38; $i++) : ?>
                     <li>
-                        <a href="<?= BASEURL; ?>/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row">
+                        <a href="<?= BASEURL; ?>/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row surah-list my-2">
                             <div class="col-2"><?= $i + 1; ?></div>
                             <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                            <div class="col-4 word"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                            <div class="col-4 arabic"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                             <div class="col-2"></div>
-                            <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
+                            <div class="col-10 uppercase"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                         </a>
                     </li>
                 <?php endfor ?>
@@ -54,15 +54,15 @@
         </div>
 
         <div class="col-md-4">
-            <ul style="list-style-type:none;">
+            <ul>
                 <?php for ($i = 38; $i < 76; $i++) : ?>
                     <li>
-                        <a href="<?= BASEURL; ?>/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row">
+                        <a href="<?= BASEURL; ?>/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row surah-list my-2">
                             <div class="col-2"><?= $i + 1; ?></div>
                             <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                            <div class="col-4 word"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                            <div class="col-4 arabic"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                             <div class="col-2"></div>
-                            <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
+                            <div class="col-10 uppercase"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                         </a>
                     </li>
                 <?php endfor ?>
@@ -70,15 +70,15 @@
         </div>
 
         <div class="col-md-4">
-            <ul style="list-style-type:none;">
+            <ul>
                 <?php for ($i = 76; $i < 114; $i++) : ?>
                     <li>
-                        <a href="<?= BASEURL; ?>/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row">
+                        <a href="<?= BASEURL; ?>/recite/<?= $data['chapter']['chapters'][$i]['id']; ?>" class="row surah-list my-2">
                             <div class="col-2"><?= $i + 1; ?></div>
                             <div class="col-6"><?= $data['chapter']['chapters'][$i]['name_simple']; ?></div>
-                            <div class="col-4 word"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
+                            <div class="col-4 arabic"><?= $data['chapter']['chapters'][$i]['name_arabic']; ?></div>
                             <div class="col-2"></div>
-                            <div class="col-10"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
+                            <div class="col-10 uppercase"><?= $data['chapter']['chapters'][$i]['translated_name']['name']; ?></div>
                         </a>
                     </li>
                 <?php endfor ?>

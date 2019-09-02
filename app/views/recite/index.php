@@ -26,7 +26,7 @@
         <?php foreach ($data['verse']['verses'] as $row) : ?>
             <div class="row">
                 <div class="col-12">
-                    <div class="word my-2">
+                    <div class="arabic my-2">
                         <?= $row['text_madani']; ?>
                     </div>
                     <div class="row my-2">
