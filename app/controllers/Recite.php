@@ -14,11 +14,8 @@ class Recite extends Controller
 
     public function page($chapter_id, $page)
     {
-        $data['judul'] = 'Recite';
         $data['verse'] = $this->model('Verse_model')->getVerse($chapter_id, $page);
 
-        $this->view('templates/header', $data);
-        $this->view('recite/index', $data);
-        $this->view('templates/footer');
+        $this->view('recite/load', $data);
     }
 }
