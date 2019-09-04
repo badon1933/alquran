@@ -6,18 +6,38 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="<?= BASEURL; ?>">Home <span class="sr-only">(current)</span></a>
             </li>
         </ul>
+        <div class="dropdown">
+            <a class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <?php foreach ($data['chapters']['chapters'] as $row) {
+                    if ($row['id'] == $data['verse']['verses'][0]['chapter_id']) {
+                        echo $row['name_simple'];
+                    }
+                }
+                ?>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="height: auto; max-height: 200px; overflow-x: hidden;">
+                <?php foreach ($data['chapters']['chapters'] as $row) : ?>
+                    <a class="dropdown-item" href="<?= BASEURL . '/recite/' . $row['id']; ?>"><?= $row['name_simple']; ?></a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Go to Verse
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 20px; height: auto; max-height: 200px; overflow-x: hidden;">
+                <?php foreach ($data['chapters']['chapters'] as $row) : ?>
+                    <?php if ($row['id'] == $data['verse']['verses'][0]['chapter_id']) : ?>
+                        <?php for ($i = 1; $i <= $row['verses_count']; $i++) : ?>
+                            <a class="dropdown-item" href="#"><?= $i; ?></a>
+                        <?php endfor; ?>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+        </div>
     </div>
 </nav>
 
@@ -49,12 +69,12 @@
         <?php endforeach ?>
     </div>
 
-    <div class="row justify-content-center my-3">
-        <a href="<?= BASEURL; ?>" class="btn btn-outline-info">Back to Home</a>
-    </div>
-
     <div class="ajax-load text-center" style="display:none">
         <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading..</p>
+    </div>
+
+    <div class="row justify-content-center my-3">
+        <a href="<?= BASEURL; ?>" class="btn btn-outline-info">Back to Home</a>
     </div>
 </div>
 
