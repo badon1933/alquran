@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+@font-face {
+    font-family: bismillah;
+    src: url('../../vendor/quran.com-fonts/bismillah/bismillah.eot'),
+     url('../../vendor/quran.com-fonts/bismillah/bismillah.svg'),
+     url('../../vendor/quran.com-fonts/bismillah/bismillah.ttf'),
+     url('../../vendor/quran.com-fonts/bismillah/bismillah.woff');
+  }
+  
 body {
     font-family: 'Lato', sans-serif;
     color: gray;
@@ -24,6 +32,11 @@ a:hover {
 .container {
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.bismillah {
+    font-family: 'bismillah', serif;
+    font-size: 4rem;
 }
 
 .quick-link {

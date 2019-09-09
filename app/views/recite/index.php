@@ -49,7 +49,7 @@
                     <div class="arabic my-2">
                         <?php if ($row['verse_number'] == 1 && $row['chapter_id'] > 1 && $row['chapter_id'] != 9) : ?>
                             <?php $bismillah_split = explode('بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ', $row['text_madani']); ?>
-                            <div class="row justify-content-center arabic mb-3">
+                            <div class="row justify-content-center bismillah mb-3">
                                 ﷽
                             </div>
                             <?= $bismillah_split[1]; ?>
