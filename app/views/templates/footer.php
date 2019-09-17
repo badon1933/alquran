@@ -1,8 +1,46 @@
 <div class="jumbotron mb-0" style="background-color: #323030;">
-    <div class="row justify-content-center">
-        <span>
-            <h4 style="color:antiquewhite">This is Footer</h4>
-        </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h4 class="footer-list">Navigate</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Developers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <h4 class="footer-list">Useful Sites</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="link">Yufid.tv</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Almanhaj.or.id</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Radiorodja.com</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Konsultasisyariah.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <h4 class="footer-list">Other Links</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="link">Github</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
