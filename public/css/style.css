@@ -3,15 +3,15 @@
 
 @font-face {
     font-family: bismillah;
-    src: url('../../vendor/quran.com-fonts/bismillah/bismillah.eot'),
-     url('../../vendor/quran.com-fonts/bismillah/bismillah.svg'),
-     url('../../vendor/quran.com-fonts/bismillah/bismillah.ttf'),
-     url('../../vendor/quran.com-fonts/bismillah/bismillah.woff');
+    src: url('../../vendor/fonts/bismillah/bismillah.eot'),
+     url('../../vendor/fonts/bismillah/bismillah.svg'),
+     url('../../vendor/fonts/bismillah/bismillah.ttf'),
+     url('../../vendor/fonts/bismillah/bismillah.woff');
   }
 
 @font-face {
     font-family: ayah;
-    src: url('../../vendor/quran.com-fonts/ayah/KFGQPC\ Uthman\ Taha\ Naskh\ Regular.ttf');
+    src: url('../../vendor/fonts/ayah/KFGQPC\ Uthman\ Taha\ Naskh\ Regular.ttf');
 }
   
 body {
